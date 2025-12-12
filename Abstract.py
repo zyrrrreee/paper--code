@@ -13,7 +13,6 @@ try:
     df_male = pd.read_excel('附件.xlsx', sheet_name=0)
     df_female = pd.read_excel('附件.xlsx', sheet_name=1)
 except:
-    print("找不到文件！请确认 '附件.xlsx' 在旁边！")
     exit()
 
 cols = {df_male.columns[9]: 'Week', df_male.columns[10]: 'BMI', df_male.columns[21]: 'Y_Conc'}
